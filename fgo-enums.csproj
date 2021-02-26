@@ -3,5 +3,6 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RepositoryUrl>https://github.com/minhducsun2002/fgo-enums</RepositoryUrl>
+    <Description>Static classes' enum members dumped from DLL image extracted from Fate/Grand Order APK</Description>
   </PropertyGroup>
 </Project>

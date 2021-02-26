@@ -2,5 +2,6 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RepositoryUrl>https://github.com/minhducsun2002/fgo-enums</RepositoryUrl>
   </PropertyGroup>
 </Project>

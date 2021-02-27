@@ -2,8 +2,11 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>cipherallies</Authors>
     <RepositoryUrl>https://github.com/minhducsun2002/fgo-enums</RepositoryUrl>
     <Description>Static classes' enum members dumped from DLL image extracted from Fate/Grand Order APK</Description>
     <PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/minhducsun2002/fgo-enums</PackageProjectUrl>
+    <RepositoryType>Git</RepositoryType>
   </PropertyGroup>
 </Project>

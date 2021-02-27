@@ -1,6 +1,6 @@
 namespace FgoExportedConstants
 {
-    static class ActionType
+    static public class ActionType
     {
         enum Type
         {
@@ -15,7 +15,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class Ai
+    static public class Ai
     {
         enum COND
         {
@@ -166,7 +166,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class AiAct
+    static public class AiAct
     {
         enum TYPE
         {
@@ -211,7 +211,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class BattleCommand
+    static public class BattleCommand
     {
         enum TYPE
         {
@@ -226,7 +226,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class BattleDataDefine
+    static public class BattleDataDefine
     {
         enum FieldActorPosition
         {
@@ -236,7 +236,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class BattleDebug
+    static public class BattleDebug
     {
         enum TAG
         {
@@ -258,7 +258,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class BattleEffectUtility
+    static public class BattleEffectUtility
     {
         enum EffectFolderType
         {
@@ -270,7 +270,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class BuffList
+    static public class BuffList
     {
         enum TYPE
         {
@@ -533,12 +533,6 @@ namespace FgoExportedConstants
             FUNCTION_ATTACK_BEFORE = 98
         }
 
-        enum INVOKE_COND_TYPE
-        {
-            INDIVIDUALITY = 0,
-            BUFF_TYPE = 1
-        }
-
         enum CONDITIONS
         {
             HP_HIGHER = 0,
@@ -560,7 +554,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class CTouch
+    static public class CTouch
     {
         enum TCH_STATE
         {
@@ -571,7 +565,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class Easing
+    static public class Easing
     {
         enum TYPE
         {
@@ -600,7 +594,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class Follower
+    static public class Follower
     {
         enum Type
         {
@@ -613,7 +607,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class FuncList
+    static public class FuncList
     {
         enum TYPE
         {
@@ -714,7 +708,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class Gift
+    static public class Gift
     {
         enum Type
         {
@@ -734,7 +728,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class Individuality
+    static public class Individuality
     {
         enum TYPE
         {
@@ -742,7 +736,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class MapCameraViewAdjusterUtil
+    static public class MapCameraViewAdjusterUtil
     {
         enum FailedReason
         {
@@ -752,7 +746,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class MissionInfoMaker
+    static public class MissionInfoMaker
     {
         enum ProgStatus
         {
@@ -765,7 +759,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class MissionType
+    static public class MissionType
     {
         enum Type
         {
@@ -779,7 +773,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class NGUIText
+    static public class NGUIText
     {
         enum Alignment
         {
@@ -798,7 +792,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class QuestGroupType
+    static public class QuestGroupType
     {
         enum Type
         {
@@ -822,7 +816,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class ServantLimitUpVoiceCache
+    static public class ServantLimitUpVoiceCache
     {
         enum Type
         {
@@ -832,7 +826,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class ShopPlayVoiceConstants
+    static public class ShopPlayVoiceConstants
     {
         enum VoiceKind
         {
@@ -873,7 +867,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class ShopRootConstants
+    static public class ShopRootConstants
     {
         enum State
         {
@@ -904,7 +898,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class SvtType
+    static public class SvtType
     {
         enum Type
         {
@@ -922,7 +916,7 @@ namespace FgoExportedConstants
         }
     }
 
-    static class TerminalPramsManager
+    static public class TerminalPramsManager
     {
         enum enSceneStatus
         {

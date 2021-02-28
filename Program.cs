@@ -2,7 +2,7 @@ namespace FgoExportedConstants
 {
     static public class ActionType
     {
-        enum Type
+        public enum Type
         {
             TALK = 1,
             SYSTEM_WINDOW = 2,
@@ -17,7 +17,7 @@ namespace FgoExportedConstants
 
     static public class Ai
     {
-        enum COND
+        public enum COND
         {
             NONE = 0,
             HP_HIGHER = 10,
@@ -131,7 +131,7 @@ namespace FgoExportedConstants
             PT_BACK_DEAD_EQUAL = 149
         }
 
-        enum ACT_NUM
+        public enum ACT_NUM
         {
             NOMAL = 0,
             ANYTIME = -1,
@@ -145,7 +145,7 @@ namespace FgoExportedConstants
             USENP_TARGET = -11
         }
 
-        enum TIMING
+        public enum TIMING
         {
             NONE = 0,
             ANYTIME = -1,
@@ -168,7 +168,7 @@ namespace FgoExportedConstants
 
     static public class AiAct
     {
-        enum TYPE
+        public enum TYPE
         {
             NONE = 0,
             RANDOM = 1,
@@ -194,7 +194,7 @@ namespace FgoExportedConstants
             RESURRECTION = 42
         }
 
-        enum TARGET
+        public enum TARGET
         {
             NONE = 0,
             RANDOM = 1,
@@ -213,7 +213,7 @@ namespace FgoExportedConstants
 
     static public class BattleCommand
     {
-        enum TYPE
+        public enum TYPE
         {
             NONE = 0,
             ARTS = 1,
@@ -228,7 +228,7 @@ namespace FgoExportedConstants
 
     static public class BattleDataDefine
     {
-        enum FieldActorPosition
+        public enum FieldActorPosition
         {
             FRONT = 0,
             CENTER = 1,
@@ -238,7 +238,7 @@ namespace FgoExportedConstants
 
     static public class BattleDebug
     {
-        enum TAG
+        public enum TAG
         {
             NONE = 0,
             SKILL = 1,
@@ -260,7 +260,7 @@ namespace FgoExportedConstants
 
     static public class BattleEffectUtility
     {
-        enum EffectFolderType
+        public enum EffectFolderType
         {
             COMMON = 1,
             NOBLE = 2,
@@ -272,7 +272,7 @@ namespace FgoExportedConstants
 
     static public class BuffList
     {
-        enum TYPE
+        public enum TYPE
         {
             NONE = 0,
             UP_COMMANDATK = 1,
@@ -422,7 +422,7 @@ namespace FgoExportedConstants
             ATTACK_BEFORE_FUNCTION = 160
         }
 
-        enum LIMIT
+        public enum LIMIT
         {
             NONE = 0,
             UPPER = 1,
@@ -430,7 +430,7 @@ namespace FgoExportedConstants
             NORMAL = 3
         }
 
-        enum ACTION
+        public enum ACTION
         {
             NONE = 0,
             COMMAND_ATK = 1,
@@ -533,20 +533,20 @@ namespace FgoExportedConstants
             FUNCTION_ATTACK_BEFORE = 98
         }
 
-        enum CONDITIONS
+        public enum CONDITIONS
         {
             HP_HIGHER = 0,
             HP_LOWER = 1,
             INDIVIDUALITIE = 2
         }
 
-        enum CHANGEVALUE
+        public enum CHANGEVALUE
         {
             RATIO_HP_HIGH = 0,
             RATIO_HP_LOW = 1
         }
 
-        enum ProgressTurnCond
+        public enum ProgressTurnCond
         {
             NONE = 0,
             ALIVE_ENEMY_ALLY = 1,
@@ -556,7 +556,7 @@ namespace FgoExportedConstants
 
     static public class CTouch
     {
-        enum TCH_STATE
+        public enum TCH_STATE
         {
             NONE = 0,
             PUSH = 1,
@@ -567,7 +567,7 @@ namespace FgoExportedConstants
 
     static public class Easing
     {
-        enum TYPE
+        public enum TYPE
         {
             LINER = 0,
             QUADRATIC_IN = 1,
@@ -596,7 +596,7 @@ namespace FgoExportedConstants
 
     static public class Follower
     {
-        enum Type
+        public enum Type
         {
             NONE = 0,
             FRIEND = 1,
@@ -609,7 +609,7 @@ namespace FgoExportedConstants
 
     static public class FuncList
     {
-        enum TYPE
+        public enum TYPE
         {
             NONE = 0,
             ADD_STATE = 1,
@@ -698,7 +698,7 @@ namespace FgoExportedConstants
             MOVE_STATE = 124
         }
 
-        enum COND
+        public enum COND
         {
             NONE = 0,
             INVARIABLY = 1,
@@ -710,7 +710,7 @@ namespace FgoExportedConstants
 
     static public class Gift
     {
-        enum Type
+        public enum Type
         {
             SERVANT = 1,
             ITEM = 2,
@@ -730,7 +730,7 @@ namespace FgoExportedConstants
 
     static public class Individuality
     {
-        enum TYPE
+        public enum TYPE
         {
             NONE = 0
         }
@@ -738,7 +738,7 @@ namespace FgoExportedConstants
 
     static public class MapCameraViewAdjusterUtil
     {
-        enum FailedReason
+        public enum FailedReason
         {
             NONE = 0,
             HAS_INTERSECT = 1,
@@ -748,7 +748,7 @@ namespace FgoExportedConstants
 
     static public class MissionInfoMaker
     {
-        enum ProgStatus
+        public enum ProgStatus
         {
             LOCK = 0,
             NOSTART = 1,
@@ -761,7 +761,7 @@ namespace FgoExportedConstants
 
     static public class MissionType
     {
-        enum Type
+        public enum Type
         {
             NONE = 0,
             EVENT = 1,
@@ -775,7 +775,7 @@ namespace FgoExportedConstants
 
     static public class NGUIText
     {
-        enum Alignment
+        public enum Alignment
         {
             Automatic = 0,
             Left = 1,
@@ -784,7 +784,7 @@ namespace FgoExportedConstants
             Justified = 4
         }
 
-        enum SymbolStyle
+        public enum SymbolStyle
         {
             None = 0,
             Normal = 1,
@@ -794,7 +794,7 @@ namespace FgoExportedConstants
 
     static public class QuestGroupType
     {
-        enum Type
+        public enum Type
         {
             NONE = 0,
             EVENT_QUEST = 1,
@@ -818,7 +818,7 @@ namespace FgoExportedConstants
 
     static public class ServantLimitUpVoiceCache
     {
-        enum Type
+        public enum Type
         {
             NONE = 0,
             MATERIAL = 1,
@@ -828,7 +828,7 @@ namespace FgoExportedConstants
 
     static public class ShopPlayVoiceConstants
     {
-        enum VoiceKind
+        public enum VoiceKind
         {
             ENTER_EVENT_SHOP = 1,
             ENTER_SELL_SERVANT = 2,
@@ -847,7 +847,7 @@ namespace FgoExportedConstants
             ENTER_GRAIL_FRAGMENTS_SHOP = 15
         }
 
-        enum VoiceFlag
+        public enum VoiceFlag
         {
             ENTER_EVENT_SHOP = 2,
             ENTER_SELL_SERVANT = 4,
@@ -869,7 +869,7 @@ namespace FgoExportedConstants
 
     static public class ShopRootConstants
     {
-        enum State
+        public enum State
         {
             INIT = 0,
             TOP = 1,
@@ -888,7 +888,7 @@ namespace FgoExportedConstants
             GRAIL_FRAGMENTS = 14
         }
 
-        enum InputState
+        public enum InputState
         {
             INIT_START = 0,
             INIT_END = 1,
@@ -900,7 +900,7 @@ namespace FgoExportedConstants
 
     static public class SvtType
     {
-        enum Type
+        public enum Type
         {
             NORMAL = 1,
             HEROINE = 2,
@@ -918,7 +918,7 @@ namespace FgoExportedConstants
 
     static public class TerminalPramsManager
     {
-        enum enSceneStatus
+        public enum enSceneStatus
         {
             enNone = 0,
             enInitialize = 1,
@@ -927,7 +927,7 @@ namespace FgoExportedConstants
             enMAX = 4
         }
 
-        enum eDispState
+        public enum eDispState
         {
             None = 0,
             Top = 1,
@@ -938,7 +938,7 @@ namespace FgoExportedConstants
             MAX = 6
         }
 
-        enum eSpecifiedScene
+        public enum eSpecifiedScene
         {
             None = 0,
             EventReward = 1

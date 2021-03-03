@@ -533,6 +533,12 @@ namespace FgoExportedConstants
             FUNCTION_ATTACK_BEFORE = 98
         }
 
+        public enum INVOKE_COND_TYPE
+        {
+            INDIVIDUALITY = 0,
+            BUFF_TYPE = 1
+        }
+
         public enum CONDITIONS
         {
             HP_HIGHER = 0,

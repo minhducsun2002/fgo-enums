@@ -128,7 +128,31 @@ namespace FgoExportedConstants
             TOTAL_COUNT_EQUAL_INDIVIDUALITY_ALL_FIELD = 146,
             PT_FRONT_DEAD_EQUAL = 147,
             PT_CENTER_DEAD_EQUAL = 148,
-            PT_BACK_DEAD_EQUAL = 149
+            PT_BACK_DEAD_EQUAL = 149,
+            COUNT_HIGHER_INDIVIDUALITY_PT_FRONT = 150,
+            COUNT_HIGHER_INDIVIDUALITY_PT_CENTER = 151,
+            COUNT_HIGHER_INDIVIDUALITY_PT_BACK = 152,
+            COUNT_HIGHER_INDIVIDUALITY_OPPONENT_FRONT = 153,
+            COUNT_HIGHER_INDIVIDUALITY_OPPONENT_CENTER = 154,
+            COUNT_HIGHER_INDIVIDUALITY_OPPONENT_BACK = 155,
+            COUNT_LOWER_INDIVIDUALITY_PT_FRONT = 156,
+            COUNT_LOWER_INDIVIDUALITY_PT_CENTER = 157,
+            COUNT_LOWER_INDIVIDUALITY_PT_BACK = 158,
+            COUNT_LOWER_INDIVIDUALITY_OPPONENT_FRONT = 159,
+            COUNT_LOWER_INDIVIDUALITY_OPPONENT_CENTER = 160,
+            COUNT_LOWER_INDIVIDUALITY_OPPONENT_BACK = 161,
+            COUNT_EQUAL_INDIVIDUALITY_PT_FRONT = 162,
+            COUNT_EQUAL_INDIVIDUALITY_PT_CENTER = 163,
+            COUNT_EQUAL_INDIVIDUALITY_PT_BACK = 164,
+            COUNT_EQUAL_INDIVIDUALITY_OPPONENT_FRONT = 165,
+            COUNT_EQUAL_INDIVIDUALITY_OPPONENT_CENTER = 166,
+            COUNT_EQUAL_INDIVIDUALITY_OPPONENT_BACK = 167,
+            CHECK_PRECEDING_ENEMY = 168,
+            COUNT_HIGHER_REMAIN_TURN = 169,
+            COUNT_LOWER_REMAIN_TURN = 170,
+            COUNT_HIGHER_AI_171 = 171,
+            COUNT_LOWER_AI_172 = 172,
+            COUNT_EQUAL_AI_173 = 173
         }
 
         public enum ACT_NUM
@@ -162,7 +186,8 @@ namespace FgoExportedConstants
             TURN_PLAYER_START = 3,
             TURN_PLAYER_END = 4,
             TURN_ENEMY_START = 5,
-            TURN_ENEMY_END = 6
+            TURN_ENEMY_END = 6,
+            ENTRY_UNIT = 7
         }
     }
 
@@ -419,7 +444,10 @@ namespace FgoExportedConstants
             SPECIAL_INVINCIBLE = 157,
             PREVENT_DEATH_BY_DAMAGE = 158,
             COMMANDCODEATTACK_AFTER_FUNCTION = 159,
-            ATTACK_BEFORE_FUNCTION = 160
+            ATTACK_BEFORE_FUNCTION = 160,
+            DONOT_SKILL_SELECT = 161,
+            INVISIBLE_BATTLE_CHARA = 163,
+            BUFF_RATE = 162
         }
 
         public enum LIMIT
@@ -530,7 +558,9 @@ namespace FgoExportedConstants
             SPECIAL_INVINCIBLE = 95,
             PREVENT_DEATH_BY_DAMAGE = 96,
             FUNCTION_COMMANDCODEATTACK_AFTER = 97,
-            FUNCTION_ATTACK_BEFORE = 98
+            FUNCTION_ATTACK_BEFORE = 98,
+            DONOT_SKILL_SELECT = 99,
+            BUFF_RATE = 100
         }
 
         public enum INVOKE_COND_TYPE
@@ -695,13 +725,18 @@ namespace FgoExportedConstants
             FORCE_ALL_BUFF_NOACT = 58,
             BREAK_GAUGE_UP = 59,
             BREAK_GAUGE_DOWN = 60,
+            MOVE_TO_LAST_SUBMEMBER = 61,
             GET_REWARD_GIFT = 117,
             SEND_SUPPORT_FRIEND_POINT = 118,
             MOVE_POSITION = 119,
             REVIVAL = 120,
             DAMAGE_NP_INDIVIDUAL_SUM = 121,
             DAMAGE_VALUE_SAFE = 122,
-            MOVE_STATE = 124
+            MOVE_STATE = 124,
+            CHANGE_BGM_COSTUME = 125,
+            FUNC_126 = 126,
+            FUNC_127 = 127,
+            UPDATE_ENTRY_POSITIONS = 128
         }
 
         public enum COND
@@ -850,7 +885,8 @@ namespace FgoExportedConstants
             BACK_SHOP2 = 12,
             CANCEL_SHOP = 13,
             ENTER_SPECIAL_ITEM_SHOP = 14,
-            ENTER_GRAIL_FRAGMENTS_SHOP = 15
+            ENTER_GRAIL_FRAGMENTS_SHOP = 15,
+            ENTER_SVT_COSTUME_SHOP = 16
         }
 
         public enum VoiceFlag
@@ -869,7 +905,8 @@ namespace FgoExportedConstants
             BACK_SHOP2 = 4096,
             CANCEL_SHOP = 8192,
             ENTER_SPECIAL_ITEM_SHOP = 16384,
-            ENTER_GRAIL_FRAGMENTS_SHOP = 32768
+            ENTER_GRAIL_FRAGMENTS_SHOP = 32768,
+            ENTER_SVT_COSTUME_SHOP = 65536
         }
     }
 
@@ -891,7 +928,8 @@ namespace FgoExportedConstants
             SERVANT_STORAGE = 11,
             EQUIP_STORAGE = 12,
             HELP = 13,
-            GRAIL_FRAGMENTS = 14
+            GRAIL_FRAGMENTS = 14,
+            SVT_COSTUME = 15
         }
 
         public enum InputState

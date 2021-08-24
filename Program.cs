@@ -840,7 +840,7 @@ namespace FgoExportedConstants
             EVENT_ASSIST = 43
         }
 
-        public enum Flag
+        public enum Flag : long
         {
             TYPE_POINT = 1L,
             TYPE_EXCHANGE_SHOP = 2L,
@@ -1506,7 +1506,7 @@ namespace FgoExportedConstants
             RESET_INTERVAL = 4
         }
 
-        public enum Flag
+        public enum Flag : long
         {
             NONE = 1L,
             NO_BATTLE = 2L,
@@ -2040,7 +2040,7 @@ namespace FgoExportedConstants
             ATTACK_ENEMY_ONE = 1
         }
 
-        public enum EffectFlag
+        public enum EffectFlag : long
         {
             SUPPORT = -1L,
             ATTACK_ENEMY_ALL = 1L,

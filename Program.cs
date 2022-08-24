@@ -152,7 +152,15 @@ namespace FgoExportedConstants
             COUNT_LOWER_REMAIN_TURN = 170,
             COUNT_HIGHER_AI_171 = 171,
             COUNT_LOWER_AI_172 = 172,
-            COUNT_EQUAL_AI_173 = 173
+            COUNT_EQUAL_AI_173 = 173,
+            CHECK_AI_174 = 174,
+            CHECK_SELF_NPTURN_HIGHER = 175,
+            CHECK_SELF_NPTURN_LOWER = 176,
+            CHECK_USE_SKILL_THISTURN = 177,
+            COUNT_CHAIN_HIGHER = 178,
+            COUNT_CHAIN_LOWER = 179,
+            COUNT_CHAIN_EQUAL = 180,
+            CHECK_SELECT_CHAIN = 181
         }
 
         public enum ACT_NUM
@@ -166,7 +174,14 @@ namespace FgoExportedConstants
             REACTION_WAVESTART = -8,
             MAXNP = -9,
             SHIFT_SARVANT_AFTER = -10,
-            USENP_TARGET = -11
+            USENP_TARGET = -11,
+            REACTION_TURNSTART = -12,
+            REACTION_PLAYERACTIONSTART = -13,
+            REACTION_ENTRY_UNIT = -14,
+            REACTION_BEFORE_RESURRECTION = -15,
+            REACTION_BEFORE_DEAD = -16,
+            REACTION_ENEMY_TURN_START_PRIORITY = -401,
+            REACTION_ENEMY_TURN_END_PRIORITY = -501
         }
 
         public enum TIMING
@@ -216,7 +231,9 @@ namespace FgoExportedConstants
             ATTACK_B_CRITICAL = 18,
             ATTACK_Q_CRITICAL = 19,
             SKILL_ID_CHECKBUFF = 41,
-            RESURRECTION = 42
+            RESURRECTION = 42,
+            MESSAGE = 72,
+            MESSAGE_GROUP = 73
         }
 
         public enum TARGET
@@ -287,6 +304,13 @@ namespace FgoExportedConstants
             FRONT = 0,
             CENTER = 1,
             BACK = 2
+        }
+
+        public enum RaidType
+        {
+            NONE = 0,
+            RAID = 1,
+            SUPER_BOSS = 2
         }
     }
 
@@ -516,7 +540,11 @@ namespace FgoExportedConstants
             ATTACK_BEFORE_FUNCTION = 160,
             DONOT_SKILL_SELECT = 161,
             INVISIBLE_BATTLE_CHARA = 163,
-            BUFF_RATE = 162
+            BUFF_RATE = 162,
+            COUNTER_FUNCTION = 165,
+            NOT_TARGET_SKILL = 166,
+            TO_FIELD_CHANGE_FIELD = 10001,
+            TO_FIELD_AVOID_BUFF = 10002
         }
 
         public enum LIMIT
@@ -629,7 +657,19 @@ namespace FgoExportedConstants
             FUNCTION_COMMANDCODEATTACK_AFTER = 97,
             FUNCTION_ATTACK_BEFORE = 98,
             DONOT_SKILL_SELECT = 99,
-            BUFF_RATE = 100
+            INVISIBLE_BATTLE_CHARA = 100,
+            BUFF_RATE = 101,
+            COUNTER_FUNCTION = 102,
+            NOT_TARGET_SKILL = 103,
+            TO_FIELD_CHANGE_FIELD = 104,
+            TO_FIELD_AVOID_BUFF = 105
+        }
+
+        public enum DEL_AFTER_TYPE
+        {
+            NONE = 0,
+            UPDATE_FIELD = 1,
+            UPDATE_VIEW = 2
         }
 
         public enum INVOKE_COND_TYPE
@@ -683,7 +723,8 @@ namespace FgoExportedConstants
     {
         public enum CommonConsumeType
         {
-            ITEM = 1
+            ITEM = 1,
+            AP = 2
         }
     }
 
@@ -758,7 +799,18 @@ namespace FgoExportedConstants
         {
             SVT_EQUIP = 1,
             FILTER_GROUP = 2,
-            SVT_EQUIP_EXP = 3
+            SVT_EQUIP_EXP = 3,
+            SVT_BONUS_SKILL = 4,
+            SKILL_FILTER_GROUP = 5
+        }
+    }
+
+    public class EventBuddyPointEntity
+    {
+        public enum EventBuddyPointFlag
+        {
+            HIDE_BUDDY_POINT_RESULT = 1,
+            NOT_BUDDY_POINT_BUFF = 2
         }
     }
 
@@ -837,7 +889,11 @@ namespace FgoExportedConstants
             IS_MAIN_INTERLUDE = 39,
             QUEST_COOLTIME = 41,
             EVENT_PANEL = 42,
-            EVENT_ASSIST = 43
+            EVENT_ASSIST = 43,
+            TREASURE_BOX = 44,
+            HIDE_AFTER_PURCHASE = 45,
+            ALLOUT_BATTLE = 46,
+            SPOT_COOLTIME = 47
         }
 
         public enum Flag : long
@@ -884,7 +940,11 @@ namespace FgoExportedConstants
             IS_MAIN_INTERLUDE = 549755813888L,
             QUEST_COOLTIME = 2199023255552L,
             EVENT_PANEL = 4398046511104L,
-            EVENT_ASSIST = 8796093022208L
+            EVENT_ASSIST = 8796093022208L,
+            TREASURE_BOX = 17592186044416L,
+            HIDE_AFTER_PURCHASE = 35184372088832L,
+            ALLOUT_BATTLE = 70368744177664L,
+            SPOT_COOLTIME = 140737488355328L
         }
     }
 
@@ -1012,7 +1072,11 @@ namespace FgoExportedConstants
             RACE_RANKING = 6,
             EVENT_TOWER = 7,
             FATIGUE_RECOVERY = 8,
-            EVENT_BOARD_GAME_TOKEN = 9
+            EVENT_BOARD_GAME_TOKEN = 9,
+            TREASURE_BOX = 10,
+            RANDOM_MISSION = 11,
+            DIGGING_MISSION = 12,
+            EVENT_EXPEDITION = 13
         }
 
         public enum RewardSceneFlag
@@ -1056,7 +1120,8 @@ namespace FgoExportedConstants
         {
             NONE = 0,
             JOIN = 1,
-            COND_JOIN = 2
+            COND_JOIN = 2,
+            DIRECT_JOIN = 3
         }
     }
 
@@ -1133,6 +1198,14 @@ namespace FgoExportedConstants
             VALUE_LONG = 4,
             BATTLE_LINE = 5,
             ASSIST = 6
+        }
+    }
+
+    public class FieldMotionEntity
+    {
+        public enum Flag
+        {
+            NOT_START_BATTLE_SKIP = 1
         }
     }
 
@@ -1242,7 +1315,10 @@ namespace FgoExportedConstants
             CHANGE_BGM_COSTUME = 125,
             FUNC_126 = 126,
             FUNC_127 = 127,
-            UPDATE_ENTRY_POSITIONS = 128
+            UPDATE_ENTRY_POSITIONS = 128,
+            BUDDY_POINT_UP = 129,
+            ADD_FIELD_CHANGE_TO_FIELD = 130,
+            SUB_FIELD_BUFF = 131
         }
 
         public enum COND
@@ -1263,7 +1339,35 @@ namespace FgoExportedConstants
             ATTACK = 1,
             DEFENCE = 2,
             STATUS_EFFECT = 3,
-            OTHER = 4
+            OTHER = 4,
+            ATTACK_DEBUFF = 5,
+            DEFENCE_DEBUFF = 6,
+            STATUS_EFFECT_DEBUFF = 7
+        }
+
+        public enum FuncCategoryFlag
+        {
+            SVT_EQUIP_FILTER = 0,
+            COMMAND_CODE_FILTER = 1
+        }
+
+        public enum Flag
+        {
+            SVT_EQUIP_FILTER = 1,
+            COMMAND_CODE_FILTER = 2
+        }
+    }
+
+    public class GachaEntity
+    {
+        public enum FlagKind
+        {
+            PC_MESSAGE = 1
+        }
+
+        public enum Flag
+        {
+            PC_MESSAGE = 2
         }
     }
 
@@ -1370,7 +1474,8 @@ namespace FgoExportedConstants
             DAILY = 3,
             EXTRA = 4,
             LIMITED = 5,
-            COMPLETE = 6
+            COMPLETE = 6,
+            RANDOM = 7
         }
     }
 
@@ -1380,7 +1485,9 @@ namespace FgoExportedConstants
         {
             BG_IMAGE = 1,
             BGM = 2,
-            FRONT_OBJ = 6
+            SERVANT_OVERLAY_OBJECT = 6,
+            BG_IMAGE_MULTIPLE = 7,
+            BACK_OBJECT = 8
         }
     }
 
@@ -1503,7 +1610,8 @@ namespace FgoExportedConstants
             CLOSE = 1,
             REPEAT_FIRST = 2,
             REPEAT_LAST = 3,
-            RESET_INTERVAL = 4
+            RESET_INTERVAL = 4,
+            CLOSE_DISP = 5
         }
 
         public enum Flag : long
@@ -1563,7 +1671,10 @@ namespace FgoExportedConstants
             RECONSTRUCTION = 9007199254740992L,
             ENEMY_IMMEDIATE_APPEAR = 18014398509481984L,
             NO_SUPPORT_LIST = 36028797018963968L,
-            LIVE = 72057594037927936L
+            LIVE = 72057594037927936L,
+            FORCE_DISPLAY_ENEMY_INFO = 144115188075855872L,
+            ALLOUT_BATTLE = 288230376151711744L,
+            RECOLLECTION = 576460752303423488L
         }
 
         public enum ConsumeType
@@ -1596,7 +1707,8 @@ namespace FgoExportedConstants
             INTERLUDE = 13,
             EVENT_BATTLE_LINE = 14,
             BATTLE_GROUP = 15,
-            SHARE_QUEST_INFO = 16
+            SHARE_QUEST_INFO = 16,
+            ALLOUT_BATTLE_QUEST = 17
         }
     }
 
@@ -1766,7 +1878,9 @@ namespace FgoExportedConstants
             BATTLE = 2,
             EVENT_REWORD = 3,
             EVENT_SHOP = 4,
-            MISSON = 5
+            MISSON = 5,
+            TERMINAL = 6,
+            BATTLE_BOND = 7
         }
     }
 
@@ -1813,7 +1927,10 @@ namespace FgoExportedConstants
             CANCEL_SHOP = 13,
             ENTER_SPECIAL_ITEM_SHOP = 14,
             ENTER_GRAIL_FRAGMENTS_SHOP = 15,
-            ENTER_SVT_COSTUME_SHOP = 16
+            ENTER_SVT_COSTUME_SHOP = 16,
+            ENTER_START_UP_SUMMON_SHOP = 17,
+            ENTER_SHOP13_SHOP = 18,
+            ENTER_TRADE_AP_SHOP = 19
         }
 
         public enum VoiceFlag
@@ -1833,7 +1950,10 @@ namespace FgoExportedConstants
             CANCEL_SHOP = 8192,
             ENTER_SPECIAL_ITEM_SHOP = 16384,
             ENTER_GRAIL_FRAGMENTS_SHOP = 32768,
-            ENTER_SVT_COSTUME_SHOP = 65536
+            ENTER_SVT_COSTUME_SHOP = 65536,
+            ENTER_START_UP_SUMMON_SHOP = 131072,
+            ENTER_SHOP13_SHOP = 262144,
+            ENTER_TRADE_AP_SHOP = 524288
         }
     }
 
@@ -1856,7 +1976,11 @@ namespace FgoExportedConstants
             EQUIP_STORAGE = 12,
             HELP = 13,
             GRAIL_FRAGMENTS = 14,
-            SVT_COSTUME = 15
+            SVT_COSTUME = 15,
+            START_UP_SUMMON = 16,
+            COIN_ROOM = 17,
+            SHOP13 = 18,
+            TRADE_AP = 19
         }
 
         public enum InputState
@@ -1986,7 +2110,8 @@ namespace FgoExportedConstants
             SVT_EQUIP_MATERIAL = 8,
             ENEMY_COLLECTION_DETAIL = 9,
             ALL = 10,
-            COMMAND_CODE = 11
+            COMMAND_CODE = 11,
+            SVT_MATERIAL_TD = 12
         }
     }
 
@@ -2063,12 +2188,34 @@ namespace FgoExportedConstants
         }
     }
 
+    public class UserEventRandomMissionEntity
+    {
+        public enum Status
+        {
+            NONE = 0,
+            START = 1
+        }
+    }
+
     public class UserFollowEntity
     {
         public enum Flag
         {
             NONE = 1,
             IS_LOCK = 2
+        }
+    }
+
+    public class UserGachaEntity
+    {
+        public enum StatusKind
+        {
+            PC_END = 1
+        }
+
+        public enum Status
+        {
+            PC_END = 2
         }
     }
 
@@ -2183,7 +2330,13 @@ namespace FgoExportedConstants
             MATERIAL_PARENT_WAR = 10,
             COORDINATES = 11,
             EFFECT_CHANGE_BLACK_MARK = 12,
-            QUEST_BOARD_SECTION_IMAGE = 13
+            QUEST_BOARD_SECTION_IMAGE = 13,
+            WAR_FORCE_DISP = 14,
+            WAR_FORCE_HIDE = 15,
+            START_TYPE = 16,
+            NOTICE_DIALOG_TEXT = 17,
+            CLEAR_MARK = 18,
+            EFFECT_CHANGE_WHITE_MARK = 19
         }
     }
 
@@ -2314,7 +2467,9 @@ namespace FgoExportedConstants
             IS_NOT_COME_BACK_SQUARE = 121,
             MOVE_BY_USE_DRTOUR_TARGET_RANGE_APPROACH_DRTOUR = 122,
             MOVE_BY_USE_DRTOUR_TARGET_RANGE_LEAVE_DRTOUR = 123,
-            MOVE_BY_USE_DRTOUR_TARGET_RANGE_NO_CHANGE_DRTOUR = 124
+            MOVE_BY_USE_DRTOUR_TARGET_RANGE_NO_CHANGE_DRTOUR = 124,
+            IS_MOVE_BY_ALL_DEFENSE_AREA_ENEMY_ROUTE_BLOCK = 125,
+            IS_NOT_MOVE_BY_ALL_DEFENSE_AREA_ENEMY_ROUTE_BLOCK = 126
         }
     }
 
@@ -2351,6 +2506,16 @@ namespace FgoExportedConstants
             NONE = 0,
             BUFF = 1,
             DEBUFF = 2
+        }
+    }
+
+    public class WarBoardPartySkillEntity
+    {
+        public enum TargetType
+        {
+            Both = 0,
+            Player = 1,
+            Enemy = 2
         }
     }
 
@@ -2479,7 +2644,10 @@ namespace FgoExportedConstants
             BLACK_MARK_WITH_CLEAR = 16384,
             DISP_FIRST_QUEST = 32768,
             EFFECT_DISAPPEAR_BANNER = 65536,
-            WHITE_MARK_WITH_CLEAR = 131072
+            WHITE_MARK_WITH_CLEAR = 131072,
+            WHITE_MARK_UNDER_BOARD = 262144,
+            SUB_FOLDER = 524288,
+            DISP_EARTH_POINT_WITHOUT_MAP = 1048576
         }
 
         public enum StartType
